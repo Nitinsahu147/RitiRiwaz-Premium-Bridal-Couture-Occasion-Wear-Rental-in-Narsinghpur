@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #080808;
+    color: #F4EFE6;
+  }
+}
+
+/* Hide Clerk Footer, Sign Up Link, and Development Mode Badge */
+.cl-footer,
+.cl-footerAction,
+.cl-devModeBadge,
+.cl-internal-ph2,
+[class*="cl-footer"],
+[class*="cl-devModeBadge"] {
+  display: none !important;
+}
+
+/* Center Clerk Header Title and Subtitle */
+.cl-header,
+.cl-cardHeader,
+.cl-headerTitle,
+.cl-headerSubtitle,
+[class*="cl-headerTitle"],
+[class*="cl-headerSubtitle"] {
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+/* Custom Gold Text Styling */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+/* Glassmorphism Navbar */
+.glass-nav {
+  background: rgba(8, 8, 8, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A227;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
