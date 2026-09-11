@@ -119,16 +119,14 @@ I engineered an end-to-end, high-performance web platform featuring:
 
 ## 🖼️ Visual Showcase & Screenshots
 
-> *Add your high-resolution website screenshots in the `/public/assets` folder or host them on Cloudinary/GitHub.*
-
 | 🌟 Hero & Storefront Experience | 👗 Interactive Collections & Filters |
 | :---: | :---: |
-| ![Hero Section](public/assets/store-front.png) | ![Collections Page](public/assets/Bridal%20Lehengas.png) |
+| ![Hero Section](public/assets/home.jpg) | ![Collections Page](public/assets/collection.png) |
 | *Luxury aesthetics with Cormorant Garamond typography and royal gold accents* | *Dynamic multi-criteria category & rental filter system* |
 
 | 🔮 "Find Your Look" Stylist | 🛡️ Admin Inventory & Enquiries CRM |
 | :---: | :---: |
-| ![Find Your Look](public/assets/side-lehenga.png) | ![Admin Dashboard](public/assets/Pre-Wedding%20Gowns.png) |
+| ![Find Your Look](public/assets/findlook.png) | ![Admin Dashboard](public/assets/admin.jpg) |
 | *Interactive quiz matching customers to exact occasion outfits* | *Complete inventory CRUD, Cloudinary upload & enquiries manager* |
 
 ---
@@ -213,81 +211,6 @@ graph TD
 
 ---
 
-## 🚀 Getting Started (Local Development)
-
-### Prerequisites
-- **Node.js** (v18.0.0 or higher recommended)
-- **npm** or **yarn** / **pnpm**
-- *(Optional)* Free **MongoDB Atlas** cluster URI
-- *(Optional)* Free **Cloudinary** account credentials
-- *(Optional)* Free **Clerk** account application key
-
----
-
-### Environment Configuration
-
-Create a `.env` file in the root directory:
-
-```env
-# ----------------- SERVER CONFIGURATION -----------------
-PORT=5000
-
-# ----------------- MONGODB ATLAS (Optional) -------------
-# Leave commented out to use high-speed in-memory database
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/ritiriwaz?retryWrites=true&w=majority
-
-# ----------------- CLOUDINARY MEDIA CDN (Optional) ------
-# Leave blank to enable instant local base64/DataURL preview mode
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-# ----------------- CLERK AUTH (Admin Panel) -------------
-VITE_CLERK_PUBLISHABLE_KEY=pk_test_your_clerk_publishable_key_here
-
-# ----------------- API BASE URL -------------------------
-VITE_API_BASE_URL=http://localhost:5000/api
-```
-
----
-
-### Installation & Running
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Nitinsahu147/RitiRiwaz-Premium-Bridal-Couture-Occasion-Wear-Rental-in-Narsinghpur.git
-   cd RitiRiwaz
-   ```
-
-2. **Install all dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run both Frontend and Backend concurrently**:
-   ```bash
-   npm start
-   ```
-   * Frontend will launch at: `http://localhost:5173`
-   * Backend REST API will start at: `http://localhost:5000`
-
-4. **Independent Scripts**:
-   ```bash
-   # Run Vite frontend dev server only
-   npm run dev
-
-   # Run Express API server only
-   npm run server
-
-   # Build production bundle with TypeScript checks
-   npm run build
-
-   # Preview production build locally
-   npm run preview
-   ```
-
----
-
 ## 📦 API Reference
 
 ### Products Endpoints
@@ -315,25 +238,6 @@ VITE_API_BASE_URL=http://localhost:5000/api
 
 ---
 
-## 🌐 Deployment Guide
-
-### Deploy Frontend (Vercel)
-1. Push this repository to GitHub.
-2. Import the repo into [Vercel](https://vercel.com).
-3. Set the Framework Preset to **Vite**.
-4. Configure the Environment Variables:
-   * `VITE_CLERK_PUBLISHABLE_KEY` = your Clerk publishable key.
-   * `VITE_API_BASE_URL` = your deployed backend API URL (e.g., `https://riti-riwaz-api.onrender.com/api`).
-5. Click **Deploy**.
-
-### Deploy Backend (Render / Railway)
-1. Create a **Web Service** on [Render](https://render.com) or [Railway](https://railway.app).
-2. Set Build Command: `npm install`
-3. Set Start Command: `node server/index.js`
-4. Add Environment Variables (`MONGODB_URI`, `CLOUDINARY_*`, `PORT=5000`).
-
----
-
 ## 💡 Engineering Highlights & Approaches
 
 - **Defensive & Resilient Engineering**: The application was crafted with graceful degradation — if the cloud database or API server encounters any network disruption, the client gracefully serves cached static assets without throwing fatal errors.
@@ -350,8 +254,7 @@ VITE_API_BASE_URL=http://localhost:5000/api
 *Passionate Full-Stack Developer specializing in high-converting, aesthetically stunning web applications for businesses, startups, and luxury brands.*
 
 * **GitHub**: [@Nitinsahu147](https://github.com/Nitinsahu147)
-* **LinkedIn**: [Nitin Sahu](https://www.linkedin.com/in/nitinsahu147/) *(Update with your link)*
-* **Portfolio**: [nitinsahu.dev](https://your-portfolio-link.com) *(Update with your link)*
+* **LinkedIn**: [Nitin Sahu](https://www.linkedin.com/in/nitinsahu147/) 
 * **Email**: [nitinsahu147@gmail.com](mailto:nitinsahu147@gmail.com) *(Update with your email)*
 
 ---
