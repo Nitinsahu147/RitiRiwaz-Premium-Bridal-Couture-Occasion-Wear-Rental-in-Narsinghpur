@@ -310,6 +310,16 @@ function getProductFilter(param) {
 }
 
 // REST API ROUTES
+app.get('/', (req, res) => {
+  res.json({
+    status: 'ok',
+    brand: 'Riti Riwaz API',
+    message: 'Backend API is running successfully',
+    mongodb: mongoose.connection.readyState === 1,
+    time: new Date()
+  });
+});
+
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
