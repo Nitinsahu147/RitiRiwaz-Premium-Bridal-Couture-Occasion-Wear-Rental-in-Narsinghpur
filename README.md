@@ -121,12 +121,12 @@ I engineered an end-to-end, high-performance web platform featuring:
 
 | 🌟 Hero & Storefront Experience | 👗 Interactive Collections & Filters |
 | :---: | :---: |
-| ![Hero Section](public/assets/home.jpg) | ![Collections Page](public/assets/collection.png) |
+| ![Hero Section](public/assets/home.png) | ![Collections Page](public/assets/collection.png) |
 | *Luxury aesthetics with Cormorant Garamond typography and royal gold accents* | *Dynamic multi-criteria category & rental filter system* |
 
 | 🔮 "Find Your Look" Stylist | 🛡️ Admin Inventory & Enquiries CRM |
 | :---: | :---: |
-| ![Find Your Look](public/assets/findlook.png) | ![Admin Dashboard](public/assets/admin.jpg) |
+| ![Find Your Look](public/assets/findlook.png) | ![Admin Dashboard](public/assets/admin.png) |
 | *Interactive quiz matching customers to exact occasion outfits* | *Complete inventory CRUD, Cloudinary upload & enquiries manager* |
 
 ---
@@ -255,7 +255,7 @@ graph TD
 
 * **GitHub**: [@Nitinsahu147](https://github.com/Nitinsahu147)
 * **LinkedIn**: [Nitin Sahu](https://www.linkedin.com/in/nitinsahu147/) 
-* **Email**: [nitinsahu147@gmail.com](mailto:nitinsahu147@gmail.com) *(Update with your email)*
+* **Email**: [nitinsahu147@gmail.com](mailto:nitinsahu147@gmail.com) 
 
 ---
 
