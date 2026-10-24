@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
               <div className="flex flex-col">
 
                 <span className="font-serif text-xl sm:text-2xl font-bold tracking-widest text-gold-gradient leading-none">
-                  RITI RIWA
+                  RITI RIWAZ
                 </span>
                 {/* <span className="text-[9px] uppercase tracking-widest text-gray-400 font-sans hidden sm:block mt-0.5">
                   Narsinghpur • Boutique
